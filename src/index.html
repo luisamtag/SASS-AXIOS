@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon" />
+  <title>INSURE</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <figure class="header__logo"></figure>
+      <ul class="header__list">
+        <li class="header__item"><a href="">HOW WE WORK</a></li>
+        <li class="header__item"><a href="">BLOG</a></li>
+        <li class="header__item"><a href="">ACCOUNT</a></li>
+        <li class="header__item"><button href="">VIEW PLANS</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <h1>Gestion de Citas Medicas</h1>
+    <section>
+      <h2>Citas Programadas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>nombre</th>
+            <th>fecha</th>
+            <th>hora</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="appointments-table">
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Agendar Nueva Cita</h2>
+      <form id="add-appointment-form">
+        <input type="text" id="patient-name" placeholder="Nombre del paciente" required />
+        <input type="date" id="appointment-date" required />
+        <input type="time" id="appointment-time" required />
+        <button type="submit">Agendar</button>
+      </form>
+    </section>
+    <section>
+      <h2>Reprogramar cita</h2>
+      <form id="update-appointment-id">
+        <input type="number" id="update-appointment-id" placeholder="id de la cita" required />
+        <input type="date" id="new-appointment-date" required />
+        <input type="time" id="new-appointment-date" required />
+        <button type="submit">Reprogramar</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">Hecho con <span>❤</span> por Front 8</footer>
+</body>
+
+</html>
